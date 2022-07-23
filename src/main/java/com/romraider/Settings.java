@@ -38,6 +38,7 @@ import com.romraider.io.connection.ConnectionProperties;
 import com.romraider.logger.ecu.definition.EcuDefinition;
 import com.romraider.logger.ecu.definition.Module;
 import com.romraider.logger.external.phidget.interfacekit.io.IntfKitSensor;
+import com.romraider.logger.external.phidget.vnt.io.VntVoltageSensor;
 
 public class Settings implements Serializable {
 
@@ -256,6 +257,8 @@ public class Settings implements Serializable {
     private String defaultScale = "Metric";
 
     private Map<String, IntfKitSensor> phidgetSensors;
+
+    private Map<String, VntVoltageSensor> phidgetVntVoltageSensors;
 
     /**
      * Car selection for Dyno tab
@@ -950,6 +953,16 @@ public class Settings implements Serializable {
             Map<String, IntfKitSensor> phidgetSensors) {
 
         this.phidgetSensors = phidgetSensors;
+    }
+
+    public Map<String, VntVoltageSensor> getPhidgetVntVoltageSensors() {
+        return this.phidgetVntVoltageSensors;
+    }
+
+    public void setPhidgetVntVoltageSensors(
+            Map<String, VntVoltageSensor> phidgetSensors) {
+
+        this.phidgetVntVoltageSensors = phidgetSensors;
     }
 
     public String getSelectedCar() {

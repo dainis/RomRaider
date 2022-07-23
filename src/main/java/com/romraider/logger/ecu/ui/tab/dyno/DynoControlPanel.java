@@ -1375,7 +1375,7 @@ public final class DynoControlPanel extends JPanel {
         });
         minTpsField.setInputVerifier(new NumberVerifier("Threshold"));
         String thres = getSettings().getDynoThreshold();
-        minTpsField.setText(thres);
+        minTpsField.setText("90");
 
         tpsMin = parseDouble(minTpsField);
         tpsPanel.add(minTpsField);

@@ -30,6 +30,11 @@
 			<attribute name="javadoc_location" value="http://www.phidgets.com/documentation/web/javadoc/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="lib/common/phidget22.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="http://www.phidgets.com/documentation/web/javadoc/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="lib/common/jSerialComm-2.9.1.jar"/>
 	<classpathentry kind="output" path="target"/>
