@@ -69,7 +69,7 @@ public final class VntVoltageRunner implements Stoppable {
         dataItems.get(inputName).setData(value);
 
         if (LOGGER.isTraceEnabled()) {
-            LOGGER.info(String.format("Phidget VINT sensor event - raw value: %d", value));
+            LOGGER.trace(String.format("Phidget VINT sensor event - raw value: %f", value));
         }
     }
 }
